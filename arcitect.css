@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-font{
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* color-1*/
+.Dark-01{
+    color: #131313;
+}
+/* Color-2 */
+.Dark-02{
+    color: #424242;
+}
+/* color-3 */
+.dark-03{
+    color: #727272;
+}
+.text-primary{
+    color: rgba(255, 144, 14, 1);
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main > section{
+    margin-top: 130px;
+}
+.bg-color{
+    background: rgba(255, 144, 14, 0.1);
+}
+.display-flex{
+    display: flex;
+}
+/* navbr Main*/
+
+.navbr{
+    justify-content: space-between;
+    align-items: center;
+}
+.brand{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.nav-item{
+    list-style: none;
+    margin-left: 30px;
+}
+.nav-link{
+    text-decoration: none;
+    font-weight: 500;
+}
+.navbr, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* faact-releted style */
+.fact-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.fact-card{
+    border: 1px solid goldenrod;
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.fact-number{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.fact-name{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 1px;
+}
+.fact-real{
+    margin-bottom: 59px;
+}
+.Section-title{
+    font-size: 50px;
+}
+.card-main{
+    filter: ;
+}
+/* sponsor releted style */
+.Sponspors-info{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+.img-sponsor{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.img-sponsor img{
+    /* filter: hue-rotate(90deg); */
+    /* filter: grayscale(100%); */
+    filter: drop-shadow(10px 10px 5px rgba(0,0,0,0.5));
+
+
+}
+.Sponspors-text{
+    font-size: 3.50rem;
+}
+/* banner releted */
+.banner-container{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.btn{
+    background-color: rgba(255, 144, 14, 1);
+    color: rgba(255, 255, 255, 1);
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    border-radius: 8px;
+    border: none;
+}
+.img-1{
+    width: 100%;
+}
+.quick{
+    font-size: 2rem;
+}
+.team{
+    align-items: center;
+}
+.img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.our-feture{
+    margin-left: 130px;
+    max-width: 530px;
+}
+.quick{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.quick-list{
+    font-weight: 500;
+}
+
+.team-title{
+    font-size: 2rem;
+    color: rgb(55, 201, 22);
+}
+.our-team{
+    display: flex;
+    justify-content: center;
+    border: 5px;
+    border-color: rgb(247, 105, 3);
+}
+.img-our{
+    margin-left: 450px;
+    padding:  10px 10px 10px 10px;
+    width: 500px;
+    background-color: aqua;
+    border: none; 
+}
+.Our-Sponsor{
+    background-color: rgb(223, 229, 224);
+    max-width: fit-content;
+    max-height: fit-content;
+    font-size: 30px;
+}
+.tawkir{
+    display: flex;
+    justify-content: center;
+    
+}
+.foter-f{
+    display: flex;
+    justify-content: space-evenly;
+}
+.our-class{
+    display: flex;
+    justify-content: space-evenly;
+}
+/* responsive web */
+@media screen and (max-width: 576px) {
+    .navbr, .nav-li, .nav-link, .team{
+        flex-direction: column;
+    }
+    .img-container, 
+    .fact-container{
+        grid-template-columns:1fr;
+    }
+    .our-feture{
+        margin-left: 20px;
+    }
+    .fact-container{
+        justify-items: center;
+        gap: 24px;
+    }
+    .fact-real{
+        text-align: center;
+    }
+    .team{
+        text-align: center;
+    }
+    .img-sponsor, .Sponspors-info{
+        grid-template-columns:1fr;
+        justify-items: center;
+        gap: 24px;
+    }
+}

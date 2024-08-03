@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Content</title>
+    <style>
+        .fact-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px; /* Optional: Adds space between grid items */
+        }
+
+        .fact-card {
+            border: 1px solid goldenrod;
+            width: 240px;
+            height: 240px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .img-container {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="fact-container">
+        <div class="fact-card">
+            <img src="images/icons/ribon.png" alt="Ribbon icon" class="img-container">
+            <h4 class="fact-number">54</h4>
+            <h4 class="fact-name">Awards Winnings</h4>
+        </div>
+    </div>
+</body>
+</html>
